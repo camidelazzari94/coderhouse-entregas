@@ -10,7 +10,7 @@
 
 /*Menu - Todas las páginas*/
 
-h1 {
+/* h1 {
     font-size: 20px;
 }
 
@@ -47,8 +47,39 @@ li {
 a {
     text-decoration: none;
     color: black;
+} */
+
+.marca {
+    text-decoration: none;
 }
 
+.navbar {
+    background-color: #FFD5BD;
+}
+
+.nav-link {
+    color: black;
+}
+
+.navbar-brand {
+    color: black;
+}
+
+.dropdown-menu {
+    background-color: black;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.d-flex .btn:hover {
+    background-color: black;
+}
+
+.nav-link:hover {
+    color: white;
+}
 
 
 /*Descripcion Tienda - Home*/
