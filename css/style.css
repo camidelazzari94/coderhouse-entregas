@@ -42,12 +42,22 @@ ul {
 li {
     margin-right: 10px;
     
-}
+}*/
 
 a {
     text-decoration: none;
     color: black;
-} */
+} 
+
+li:hover {
+    background: linear-gradient(#ffab7b, #FFD5BD);
+    transform: translate (50px, 10px);
+    border-radius: 3px;
+}
+
+li .active:hover {
+    background-color: #FFD5BD;
+}
 
 .marca {
     text-decoration: none;
@@ -244,7 +254,7 @@ h2 {
 #bannerBottomTienda {
     background-image: url(../imagenes/banner-bottom-tienda.png);
     width: 100%;
-    height: 180px;
+    height: 280px;
     background-repeat: none;
     background-size: cover;
     padding-top: 120px;
