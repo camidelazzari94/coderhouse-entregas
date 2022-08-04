@@ -1,0 +1,45 @@
+/*Header*/
+
+a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  li {
+    &:hover {
+      background: linear-gradient(#ffab7b, #FFD5BD);
+      border-radius: 3px;
+    }
+  
+    .active:hover {
+      background-color: #FFD5BD;
+    }
+  }
+  
+  .marca {
+    text-decoration: none;
+  }
+  
+  .navbar {
+    background-color: #FFD5BD;
+  }
+  
+  .nav-link, .navbar-brand {
+    color: black;
+  }
+  
+  .dropdown-menu {
+    background-color: black;
+  }
+  
+  .dropdown-item {
+    color: white;
+  }
+  
+  .d-flex .btn:hover {
+    background-color: black;
+  }
+  
+  .nav-link:hover {
+    color: white;
+  }
