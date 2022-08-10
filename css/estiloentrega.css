@@ -83,17 +83,17 @@ h2 {
   margin: 20px; }
 
 /* Banner Top - Contacto */
-.bannerTop {
+.bannerTop, .bannerTopContacto {
   width: 100%;
   height: 500px;
   background-repeat: none;
   background-size: cover; }
-  .bannerTop h1 {
+  .bannerTop h1, .bannerTopContacto h1 {
     text-align: center;
     padding-top: 220px;
     color: white;
     font-weight: bold;
     font-size: 48px; }
 
-#bannerTopContacto {
+.bannerTopContacto {
   background-image: url(../imagenes/banner-top-contacto.png); }
