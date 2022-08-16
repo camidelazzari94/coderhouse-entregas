@@ -1,0 +1,23 @@
+/*Descripcion Tienda - Home*/
+
+.descripcionTienda {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 150px 10%;
+    text-align: center;
+}
+  
+#textoDescripcion {
+    text-align: left;
+}
+  
+.boton {
+    background-color: black;
+    color: white;
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}

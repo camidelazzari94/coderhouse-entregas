@@ -1,5 +1,111 @@
-/*Header*/
+@charset "UTF-8";
+/*Formulario Contacto - Contacto*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+.formNewsletter #mensaje {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid black;
+  text-align: center;
+  font-size: 20px;
+  line-height: 60px; }
+
+/* Sección Artículos Más Vendidos - Tienda */
+#masVendidos {
+  grid-area: masVendidos;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center; }
+  #masVendidos .nombreArticulo {
+    font-weight: bold;
+    font-size: 16px; }
+  #masVendidos .precioArticulo {
+    font-size: 16px; }
+
+/* Banner Bottom Ver lo nuevo - Tienda */
+#bannerBottomTienda {
+  background-image: url(../imagenes/banner-bottom-tienda.png);
+  width: 100%;
+  height: 280px;
+  background-repeat: none;
+  background-size: cover;
+  padding-top: 120px; }
+  #bannerBottomTienda #botonNuevo {
+    margin-left: 65%;
+    background-color: white;
+    color: black;
+    width: 25%;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: inset; }
+
+#articulosBlog {
+  grid-area: masVendidos;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 16px; }
+  #articulosBlog div img {
+    width: 100%; }
+
+.tituloNota {
+  font-weight: bold; }
+
+/*Foto de usuario - Cuenta*/
+#imagenUsuario {
+  position: relative;
+  top: -100px;
+  left: 45%;
+  width: 200px; }
+  #imagenUsuario img {
+    height: 200px; }
+
+/*Encabezado cuenta - Cuenta*/
+#encabezadoCuenta {
+  background-color: #D9D2CB; }
+
+/*Descripcion Tienda - Home*/
+.descripcionTienda {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 150px 10%;
+  text-align: center; }
+
+#textoDescripcion {
+  text-align: left; }
+
+.boton {
+  background-color: black;
+  color: white;
+  width: 80%;
+  text-align: center;
+  font-weight: bold;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px; }
+
+/*Footer*/
+footer {
+  display: grid;
+  grid-template-columns: 90% 3.3% 3.3% 3.3%;
+  background-color: black;
+  color: white;
+  padding: 40px 0px 30px 10px; }
+
+/*Header*/
 a {
   text-decoration: none;
   color: black; }
@@ -32,23 +138,64 @@ li .active:hover {
 .nav-link:hover {
   color: white; }
 
-/*Footer*/
-footer {
-  display: grid;
-  grid-template-columns: 90% 3.3% 3.3% 3.3%;
-  background-color: black;
-  color: white;
-  padding: 40px 0px 30px 10px; }
+/*Tipografía y*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto'; }
 
-/*Formulario Contacto - Contacto*/
-.formNewsletter #mensaje {
+/*Banner Top - Todas las páginas*/
+.bannerTop {
   width: 100%;
-  border-radius: 10px;
-  border: 3px solid black;
-  text-align: center;
-  font-size: 20px;
-  line-height: 60px; }
+  height: 500px;
+  background-repeat: none;
+  background-size: cover; }
+  .bannerTop h1 {
+    text-align: center;
+    padding-top: 220px;
+    color: white;
+    font-weight: bold;
+    font-size: 48px; }
 
+#bannerTopTienda {
+  background-image: url(../imagenes/banner-top-tienda.png); }
+
+#bannerTopBlog {
+  background-image: url(../imagenes/banner-top-blog.png); }
+
+#bannerTopContacto {
+  background-image: url(../imagenes/banner-top-contacto.png); }
+
+#bannerTopCuenta {
+  background-image: url(../imagenes/banner-top-cuenta.png); }
+
+/*Categorias - Todas las paginas*/
+.categoriasPadre {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 231px; }
+
+.categoria {
+  background-repeat: none;
+  background-size: cover;
+  width: 33.333333333333333333333333333333333333333333333%; }
+  .categoria p {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 35px; }
+
+#categoria1 {
+  background-image: url(../imagenes/banner-clothing.png); }
+
+#categoria2 {
+  background-image: url(../imagenes/banner-accesories.png); }
+
+#categoria3 {
+  background-image: url(../imagenes/banner-shoes.png); }
+
+/*Formulario Newsletter - Todas las paginas*/
 .newsletter {
   background-color: #D9D2CB;
   width: 100%;
@@ -65,7 +212,6 @@ footer {
   width: 80%; }
   .formNewsletter input {
     width: 100%;
-    /* height: 60px; */
     line-height: 60px;
     border-radius: 10px;
     border: 3px solid black;
@@ -82,18 +228,43 @@ h2 {
   font-weight: bold;
   margin: 20px; }
 
-/* Banner Top - Contacto */
-.bannerTop, .bannerTopContacto {
-  width: 100%;
-  height: 500px;
-  background-repeat: none;
-  background-size: cover; }
-  .bannerTop h1, .bannerTopContacto h1 {
+/*Mobile - Todas las páginas*/
+@media (max-width: 768px) {
+  .barraMenu {
+    display: none; }
+  .categoriasPadre {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    height: 450px;
+    width: 100%; }
+  .categoria {
+    width: 100%;
+    height: 958px; }
+    .categoria p {
+      margin-top: 60px;
+      font-size: 25px; }
+  .productosMasVendidos {
+    display: flex;
+    flex-wrap: wrap; }
+  #bannerBottomTienda {
+    height: 100px;
+    padding-top: 30px; }
+    #bannerBottomTienda #botonNuevo {
+      width: 80%;
+      margin-left: 10%; }
+  #articulosBlog {
+    display: block; }
+  footer {
+    grid-template-columns: 55% 15% 15% 15%; }
+  #imagenUsuario {
+    left: 30%; }
+  .descripcionTienda {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 80px 10%;
     text-align: center;
-    padding-top: 220px;
-    color: white;
-    font-weight: bold;
-    font-size: 48px; }
-
-.bannerTopContacto {
-  background-image: url(../imagenes/banner-top-contacto.png); }
+    row-gap: 20px; }
+  #textoDescripcion {
+    text-align: center; } }
