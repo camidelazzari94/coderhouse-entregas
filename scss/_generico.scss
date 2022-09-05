@@ -27,18 +27,32 @@
   
 #bannerTopTienda {
     background-image: url(../imagenes/banner-top-tienda.png);
+    background-position: center;
 }
   
 #bannerTopBlog {
     background-image: url(../imagenes/banner-top-blog.png);
-}
+    background-position: center;
+  }
   
 #bannerTopContacto {
     background-image: url(../imagenes/banner-top-contacto.png);
+    background-position: center;
 }
   
 #bannerTopCuenta {
     background-image: url(../imagenes/banner-top-cuenta.png);
+    background-position: center;
+}
+
+#bannerTopClothing {
+    background-image: url(../imagenes/banner-top-tienda-clothing.png);
+    background-position: center;
+}
+
+#bannerTopShoes {
+    background-image: url(../imagenes/banner-top-tienda-shoes.png);
+    background-position: center;
 }
 
 /*Categorias - Todas las paginas*/
@@ -48,11 +62,17 @@
     flex-flow: row nowrap;
     height: 231px;
 }
+
+.categoria:hover {
+    transform: scale(1.1);
+    font-size: 45px;
+}
   
 .categoria {
     background-repeat: none;
     background-size: cover;
     width: 33.333333333333333333333333333333333333333333333%;
+    transition: transform 2s;
   
     p {
       text-align: center;
@@ -73,6 +93,21 @@
   
 #categoria3 {
     background-image: url(../imagenes/banner-shoes.png);
+}
+
+/*Categorias - Todas las paginas*/
+
+.categoriasPadreDos {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 231px;
+  margin-bottom: 20px;
+
+  .categoria {
+    background-repeat: none;
+    background-size: cover;
+    width: 50%;
+  }  
 }
   
 /*Formulario Newsletter - Todas las paginas*/
@@ -118,6 +153,12 @@ h2 {
   /*Mobile - Todas las páginas*/
 
 @media (max-width: 768px) {
+
+    .formNewsletter {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     .barraMenu {
       display: none;
     }
@@ -129,6 +170,25 @@ h2 {
       flex-wrap: nowrap;
       height: 450px;
       width: 100%;
+    }
+
+    .categoriasPadreDos {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+      flex-wrap: nowrap;
+      height: 450px;
+      width: 100%;
+
+      .categoria {
+        width: 100%;
+        height: 958px;
+
+        p {
+          margin-top: 95px;
+          font-size: 25px;  
+        }
+      }
     }
   
     .categoria {
@@ -179,5 +239,6 @@ h2 {
     #textoDescripcion {
       text-align: center;
     }
-  }
+ 
+}
   

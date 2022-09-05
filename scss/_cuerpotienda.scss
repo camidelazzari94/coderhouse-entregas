@@ -1,5 +1,14 @@
 /* Sección Artículos Más Vendidos - Tienda */
 
+.imagenProducto {
+  transition: all 1s;
+}
+
+.imagenProducto:hover {
+  opacity: 30%;
+  transform: scale(1.07);
+}
+
 #masVendidos {
     grid-area: masVendidos;
     display: flex;
